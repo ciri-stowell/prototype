@@ -51,7 +51,7 @@
 .page-img {
   padding-top: 20px;
     position: fixed;
-    max-width: 400px;
+    max-width: 100%;
     background: #fff;
     z-index: -2;
 }
