@@ -84,9 +84,9 @@ body {
     top:330px;
     padding:25px;
     font-size: 35px;
-    font-family: brandon text;
+    font-family: "brandon-grotesque";
     font-weight: 700;
-    z-index: -1;
+    z-index: 1;
     line-height: 35px;
 }
 
