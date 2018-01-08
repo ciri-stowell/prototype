@@ -1,263 +1,130 @@
+<div class="main-text-block"><!DOCTYPE html>
+<html lang="en" >
 
-.fa-bars {
-  float: right;
-  margin: 20px;
-  font-size: 25px !important;
-  color: #203D7C;
-  }
-
-  .fa-times {
-    font-size:20px !important;
-  }
-
-  #hamburger {
-    cursor: pointer;
-  }
-
-#main-menu {
-  background: #fff;
-  top:40px;
-  font-size: 40px;
-  color: #203D7C;
-  font-family: "open sans";
-  font-weight: 500;
-  display: none;
-  z-index: 8;
-  position: fixed;
-  width: 100%;
-  height:800px;
-}
-
-#main-menu a {
-  color: #203D7C;
-  text-decoration: none;
-}
-
-#main-menu ul{
-  list-style-type: none; 
-  padding:0; 
-}
-
-#main-menu li{
-  text-align: center;
-  padding: 20px; 
-}
-
-.separator {
-    background: #2D4FBF;
-    width: 35px;
-    height: 5px;
-    margin: auto;
-}
-
-#menu-head {
-    width: 100%;
-    padding: 15px;
-    background: white;
-    position: fixed;
-    z-index: 3;
-    top: 70px;
-}
-
-.page-img {
-  padding-top: 20px;
-    position: fixed;
-    max-width: 100%;
-    background: #fff;
-    z-index: -2;
-}
-
-#page {
-  padding-top: 20px;
-  margin:auto;
-}
-
-body {
-  margin:auto;
-  max-width: 100%;
-  position: relative;
-  top: 60px;
-}
-
-
-#page-header {
-  background: #f6f6f6;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-#logo {
-  width: 50%;
-    display: block;
-    margin: auto;
-    padding:15px 0px 15px 30px;
-}
-
-.page-title {
-    position: absolute;
-    margin: auto;
-    top:330px;
-    padding:25px;
-    font-size: 35px;
-    font-family: "brandon-grotesque", "sans serif";
-    font-weight: 700;
-    z-index: 1;
-    line-height: 35px;
-}
-
-.menu-button {
-    border: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 15px;
-    margin: 10px;
-    text-decoration: none;
-    font-family: sans-serif;
-    color: #2D4FBF;
-}
-
-.menu-button-x {
-    border: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 15px;
-    margin: 10px;
-    text-decoration: none;
-    font-family: FontAwesome;
-    color: #2D4FBF;
-}
-
-.title {
-  background: #2D4FBF;
-    color: #fff;
-    font-family: "open sans";
-    margin:0;
-}
-
-.title #main-title {
-  padding:15px;
-  margin: 0;
-}
-
-#menu {
-    position: fixed;
-    top: 125px;
-    z-index: 1;
-}
-
-#menu a {
-  text-decoration: none;
-  color: #000;
-}
-
-
-
-
-.front {
-  z-index:1;
-}
-
-.nav-container {
-  top:80px;
-  max-width: 460px;
-  position: relative;
-  font-family: "open sans";
-  background-color: #fff;
-  overflow: hidden;
-  min-height: 100vh;
-  z-index: 2;
-  display: none;
-  }
-
-.nav-container .nav {
-  position: absolute;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.nav-container .nav,
-.nav-container .nav ul {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
-.nav-container .nav a {
-  text-decoration: none;
-  display: block;
-  padding: 15px;
-  color: #000;
-}
-
-.nav-container .nav li {
-  margin: 0;
-  list-style-type: none;
-  border-bottom: 1px solid #3A67CB;
-}
-
-.nav-container .nav li.nav-dropdown {
-  overflow: visible;
-  display: block;
-}
-.nav-container .nav li.nav-dropdown > a,
-.nav-container .nav li.nav-dropdown > .sub-button {
-  position: relative;
-  display: inline-block;
-}
-.nav-container .nav li.nav-dropdown > a {
-  width: 100%;
-  display: inline-block;
-  position: relative;
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+  <meta charset="UTF-8">
+  <title>prototype</title>
   
-}
-.nav-container .nav li.nav-dropdown > .sub-button {
-  cursor: pointer;
-  width: 100%;
-  position: relative;
-  display: inline-block;
-}
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jud7vxj.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/a6a7c43fbc.js"></script>
+</head>
+<body>
+<div id="page-header">
+  <a id="hamburger">
+  <i class="fa fa-bars" aria-hidden="true"></i>
+  </a>
+  <img id="logo" src="images/logo.png">
+</div>
+<div id="main-menu">
+  <ul>
+    <li><a href="#">About</a></li>
+    <div class="separator"></div>
+    <li>Admissions</li>
+    <div class="separator"></div>
+    <li>Academics</li>
+    <div class="separator"></div>
+    <li>News & Events</li>
+  </ul>
+</div>
+<div id="page">
+<a class="menu-button" href="#">About Menu</a>
+<a class="menu-button-x" style="display: none;" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 
-.nav-container .nav li.nav-dropdown > .sub-button:after {
-  content: '\f105';
-  font-family: FontAwesome;
-  color:#2D4FBF;
-  position: relative;
-  margin: 0px 28px;
-  display: inline-block;
-  float: right;
-  font-size: 20px;
-}
-.nav-container .nav li.nav-dropdown > ul {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  display: none;
-}
+<div class="content">
+<p class="page-title">About Touro</p>
+<img class="page-img" src="images/page-image.jpg">
+</div>
+</div>
 
-.nav-container .nav li.nav-dropdown ul li.title .go-back {
-  cursor: pointer;
-  width: 100%;
-  position: relative;
-  display: block;
-  text-transform: uppercase;
-  color: #fff;
-}
+<div class="nav-container">
+  <ul class="nav">
+    <div class="title"><p id="main-title">ABOUT TOURO</p></div>
+    <li><a class="page" href="#">About Overview</a></li>  
+    <li><a class="page" href="#">At-a-Glance</a></li>  
+    <li><a class="page" href="#">Research</a></li>
+
+    <li class="nav-dropdown">
+      <a class="sub-button">Our Mission</a>
+      <ul>
+        <li class="title">
+          <a class="go-back">Our Mission</a>
+        </li>
+        <li><a class="page" href="#">Our Mission Overview</a></li>
+        <li><a class="page" href="#">Mission Statement</a></li>
+        <li><a class="page" href="#">Educational Goals</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-dropdown">
+      <a class="sub-button">Our History</a>
+      <ul>
+        <li class="title">
+          <a class="go-back">Our History</a>
+        </li>
+        <li><a class="page" href="#">Our History Overview</a></li>
+        <li><a class="page" href="#">Dr. Bernard Lander</a></li>
+      </ul>
+    </li>
+
+    <li><a class="page" href="#">Jewish Heritage</a></li>
+
+    <li class="nav-dropdown">
+      <a class="sub-button">Leadership</a>
+      <ul>
+        <li class="title">
+          <a class="go-back">Leadership</a>
+        </li>
+  
+        <li class="nav-dropdown">
+          <a class="sub-button">Office of the President</a>
+          <ul>
+            <li class="title">
+              <a class="go-back">Office of the President</a>
+            </li>
+            <li><a class="page" href="#">Office of the President Overview</a></li>
+            <li><a class="page" href="#">Dr. Alan Kadish</a></li>
+          </ul>
+
+          <li><a class="page" href="#">Office of the Provost</a></li>
+          <li><a class="page" href="#">Senior Leadership</a></li>
+          <li><a class="page" href="#">Board of Trustees</a></li>
+          <li><a class="page" href="#">Board of Governors</a></li>
+          <li><a class="page" href="#">Advisory Boards</a></li>
+
+        </li>
+      </ul>
+    </li>
+    
+    
+    
+    
+
+        <li><a class="page" href="#">Accreditations</a></li>
+        <li><a class="page" href="#">Careers at Touro</a></li>
+        <li><a class="page" href="#">Administration</a></li>
+
+      <li class="nav-dropdown">
+      <a class="sub-button">Administration</a>
+      <ul>
+        <li class="title">
+          <a class="go-back">Administration</a>
+        </li>
+        <li><a class="page" href="#">Administration Overview</a></li>
+        <li><a class="page" href="#">Academic Affairs</a></li>
+        <li><a class="page" href="#">Institutional Compliance</a></li>
+        <li><a class="page" href="#">Office of General Counsel</a></li>
+        <li><a class="page" href="#">Internal Audit</a></li>
+      </ul>
+    </li>
+       
+      </ul>
+</div>
 
 
 
-.nav-container .nav li.nav-dropdown ul li.title .go-back:before {
-  content: '\f104';
-  font-family: FontAwesome;
-  font-size: 20px;
-  padding: 0px 10px;
-}
-
-.nav-container .nav li.nav-dropdown ul li.title h3 {
-  width: 100%;
-  margin: 0;
-  color: #000;
-  padding: 10px;
-  font-weight: normal;
-}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script  src="script.js"></script>
+</body>
