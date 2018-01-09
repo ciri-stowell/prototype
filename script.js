@@ -3,13 +3,12 @@ $(document).ready(function() {
   var menu = $('.nav-container .nav');
   
   $('.sub-button').click(function() {
-    $(".nav-container").css("top", "60px");
     var subMenu = $(this).siblings('ul');
 
     subMenu.show();
 
     menu.animate({
-
+      'top' : '60px'
       'margin-left' : '-='+menu.width()+'px'
     }, 'linear');
  
