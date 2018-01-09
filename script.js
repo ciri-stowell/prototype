@@ -1,9 +1,9 @@
 $(document).ready(function() {
+  
+  $(".nav-container").css("top", "60px");
   var menu = $('.nav-container .nav');
   
   $('.sub-button').click(function() {
-    
-    $(".nav-container").css("top", "60px");
 
     var subMenu = $(this).siblings('ul');
 
