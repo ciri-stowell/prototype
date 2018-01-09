@@ -1,12 +1,4 @@
-.nav-dropdown {
-  position: relative;
-}
 
-.sub-button ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .fa-bars {
   float: right;
@@ -214,6 +206,7 @@ body {
 .nav-container .nav li.nav-dropdown {
   overflow: visible;
   display: block;
+  position: relative;
 }
 .nav-container .nav li.nav-dropdown > a,
 .nav-container .nav li.nav-dropdown > .sub-button {
@@ -246,7 +239,7 @@ body {
 .nav-container .nav li.nav-dropdown > ul {
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 0;
   width: 100%;
   display: none;
 }
