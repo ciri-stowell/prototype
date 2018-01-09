@@ -11,7 +11,7 @@ $(document).ready(function() {
 
       'margin-left' : '-='+menu.width()+'px'
     }, 'linear');
-
+  $(".nav-container").css("top" "60px");
   });
   
   var backButton = $('.nav-container .nav li.title > .go-back');
@@ -28,7 +28,6 @@ backButton.click(function() {
   $(".menu-button").click(function() {
     $(".menu-button").hide();
     $(".menu-button-x").show();
-    $(".nav-container").css("top" "60px");
     $(".nav-container").show();
     $('.nav-dropdown ul').each(function() {
     });
