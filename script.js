@@ -8,7 +8,7 @@ $(document).ready(function() {
     subMenu.show();
 
     menu.animate({
-      scrollTop: 0
+      scrollTop(0);
       'margin-left' : '-='+menu.width()+'px'
     }, 'linear');
  
