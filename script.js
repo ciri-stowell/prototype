@@ -4,7 +4,7 @@ $(document).ready(function() {
   
   $('.sub-button').click(function() {
     var subMenu = $(this).siblings('ul');
-  $(".nav-container).scrollTop(0);
+ 
     subMenu.show();
 
     menu.animate({
