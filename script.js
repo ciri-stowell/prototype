@@ -28,6 +28,7 @@ backButton.click(function() {
   $(".menu-button").click(function() {
     $(".menu-button").hide();
     $(".menu-button-x").show();
+    $(".nav-container").css("top" "60px");
     $(".nav-container").show();
     $('.nav-dropdown ul').each(function() {
     });
