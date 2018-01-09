@@ -2,6 +2,8 @@ $(document).ready(function() {
   var menu = $('.nav-container .nav');
   
   $('.sub-button').click(function() {
+    
+    $(".nav-container").css("top", "60px");
 
     var subMenu = $(this).siblings('ul');
 
@@ -11,7 +13,7 @@ $(document).ready(function() {
 
       'margin-left' : '-='+menu.width()+'px'
     }, 'linear');
-  $(".nav-container").css("top" "60px");
+ 
   });
   
   var backButton = $('.nav-container .nav li.title > .go-back');
